@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE_NAME, CONTACT, NAV_LINKS } from "@/lib/constants";
 
 export default function Footer() {
@@ -10,9 +11,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-block">
-              <h3 className="text-white font-bold text-xl">{SITE_NAME}</h3>
-              <p className="text-teal-400 text-sm mt-1">Fiji Islands</p>
+            <Link href="/" className="inline-flex items-start gap-3">
+              <div className="w-10 h-10 rounded-full bg-white overflow-hidden shrink-0 p-0.5 mt-0.5">
+                <Image
+                  src="/logo.png"
+                  alt={`${SITE_NAME} logo`}
+                  width={300}
+                  height={300}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div>
+                <h3 className="text-white font-bold text-xl">{SITE_NAME}</h3>
+                <p className="text-teal-400 text-sm mt-1">Fiji Islands</p>
+              </div>
             </Link>
             <p className="mt-4 text-sm leading-relaxed">
               Professional yacht rigging services across the South Pacific.

@@ -8,13 +8,14 @@ export const CONTACT = {
   phone: "+679 7090091",
   phoneHref: "tel:+6797090091",
   whatsapp: "+61 405084832",
-  whatsappHref: "https://wa.me/61405084832",
+  whatsappHref:
+    "https://api.whatsapp.com/send?phone=61405084832&text=Hi%2C%20I%27m%20interested%20in%20your%20rigging%20services.",
   email: "pyriggingservices@gmail.com",
   chiefRigger: "Sammy",
   title: "Chief Rigger",
 } as const;
 
-export const FORMSPREE_URL = "https://formspree.io/f/YOUR_FORM_ID"; // TODO: Replace with actual Formspree endpoint
+export const FORMSPREE_URL = "https://formspree.io/f/mvzvgagn";
 
 export const GA4_ID = "G-XXXXXXXXXX"; // TODO: Replace with actual GA4 Measurement ID
 
