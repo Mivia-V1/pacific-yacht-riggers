@@ -262,24 +262,69 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ===== TESTIMONIAL PLACEHOLDER ===== */}
+      {/* ===== TESTIMONIALS ===== */}
       <section className="section-padding bg-navy-900 text-white">
-        <div className="container-max text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8">
-            What Cruisers Say
-          </h2>
-          <blockquote className="text-xl lg:text-2xl leading-relaxed text-navy-200 italic">
-            &ldquo;[PLACEHOLDER: Add a real testimonial from a satisfied
-            customer. Include their name, boat name, and where the work was
-            done.]&rdquo;
-          </blockquote>
-          <p className="mt-6 text-teal-400 font-semibold">
-            — [Customer Name], SV [Boat Name]
-          </p>
-          <p className="text-navy-400 text-sm mt-1">
-            [PLACEHOLDER: Add 2-3 more testimonials as a rotating carousel or
-            grid]
-          </p>
+        <div className="container-max">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold">
+              What Cruisers Say
+            </h2>
+            <p className="mt-4 text-navy-300">
+              Real reviews from Google
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                name: "Bartek Sońta",
+                rating: 5,
+                date: "March 2026",
+                text: "Sammy and his team can handle various sizes of rigging projects on racing yachts with carbon mast and cruising yachts with standard rigging. If needed he can source premium quality lines or using local supplier could custom parts. He is super busy during high season as they handle projects in Suva and Nawi Island. Sammy has found micro cracks in the 7 years old rigging that other riggers has missed. Fully recommend.",
+              },
+            ].map((review) => (
+              <div
+                key={review.name}
+                className="bg-navy-800 rounded-xl p-6 flex flex-col"
+              >
+                <div className="flex items-center gap-1 mb-3">
+                  {Array.from({ length: review.rating }).map((_, i) => (
+                    <svg
+                      key={i}
+                      className="w-5 h-5 text-yellow-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <blockquote className="text-navy-200 leading-relaxed text-sm flex-grow">
+                  &ldquo;{review.text}&rdquo;
+                </blockquote>
+                <div className="mt-4 pt-4 border-t border-navy-700">
+                  <p className="text-white font-semibold text-sm">
+                    {review.name}
+                  </p>
+                  <p className="text-navy-400 text-xs mt-0.5">
+                    {review.date}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <a
+              href="https://www.google.com/maps/place/PACIFIC+YACHT+RIGGING+SERVICES/@-17.682094,177.3876113,16.49z/data=!4m6!3m5!1s0x6e175d59469cdf21:0x7efd5c67bf653908!8m2!3d-17.6812683!4d177.3867969!16s%2Fg%2F11myhn7_2b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 font-medium transition-colors"
+            >
+              See all reviews on Google
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 

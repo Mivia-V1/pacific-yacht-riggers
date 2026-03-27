@@ -13,6 +13,7 @@ export const CONTACT = {
   email: "pyriggingservices@gmail.com",
   chiefRigger: "Sammy",
   title: "Chief Rigger",
+  facebook: "https://www.facebook.com/people/Pacific-Yacht-Rigging-Services/61550059473082/",
 } as const;
 
 export const FORMSPREE_URL = "https://formspree.io/f/mvzvgagn";
