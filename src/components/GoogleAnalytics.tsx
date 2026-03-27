@@ -1,21 +1,31 @@
-import { GA4_ID } from "@/lib/constants";
+"use client";
+
+import { useEffect } from "react";
+
+declare global {
+  interface Window {
+    dataLayer: unknown[];
+  }
+}
+
+const GA4_ID = "G-C78T6B4P4R";
 
 export default function GoogleAnalytics() {
-  if (!GA4_ID) return null;
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`;
+    script.async = true;
+    document.head.appendChild(script);
 
-  return (
-    <>
-      <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA4_ID}');
-          `,
-        }}
-      />
-    </>
-  );
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(...args: unknown[]) {
+        window.dataLayer.push(args);
+      }
+      gtag("js", new Date());
+      gtag("config", GA4_ID);
+    };
+  }, []);
+
+  return null;
 }
