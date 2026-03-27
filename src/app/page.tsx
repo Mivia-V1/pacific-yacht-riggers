@@ -270,7 +270,7 @@ export default function HomePage() {
               What Cruisers Say
             </h2>
             <p className="mt-4 text-navy-300">
-              Real reviews from Google
+              Real reviews from Google and Facebook
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -279,7 +279,22 @@ export default function HomePage() {
                 name: "Bartek Sońta",
                 rating: 5,
                 date: "March 2026",
+                source: "Google",
                 text: "Sammy and his team can handle various sizes of rigging projects on racing yachts with carbon mast and cruising yachts with standard rigging. If needed he can source premium quality lines or using local supplier could custom parts. He is super busy during high season as they handle projects in Suva and Nawi Island. Sammy has found micro cracks in the 7 years old rigging that other riggers has missed. Fully recommend.",
+              },
+              {
+                name: "Christine Caroline Mitchell",
+                rating: 5,
+                date: "August 2025",
+                source: "Facebook",
+                text: "Sammy is absolutely AMAZING! One of our 16ml 1x19 side-stays lost a strand. We sent photos to him, he came out in the AM, removed both the side-stays and returned the next morning with dyform 1x25 16ml stays already swaged with new pins, and threads (and new toggles). Pricing was reasonable, everything was in stock, and the work was efficient. In addition, he helped us replace our ProFurl C430 furler and foils on our forestay. His pricing is reasonable, his laughter contagious, and work respectable. Highly recommend.",
+              },
+              {
+                name: "Véronique Michaud",
+                rating: 5,
+                date: "June 2025",
+                source: "Facebook",
+                text: "They gave a really nice support to Catamaran Black Lion that been hit by a Trawler in Tonga Islands. That incident broke some mast shrouds. For sure they deserve the best reviews.",
               },
             ].map((review) => (
               <div
@@ -301,13 +316,16 @@ export default function HomePage() {
                 <blockquote className="text-navy-200 leading-relaxed text-sm flex-grow">
                   &ldquo;{review.text}&rdquo;
                 </blockquote>
-                <div className="mt-4 pt-4 border-t border-navy-700">
-                  <p className="text-white font-semibold text-sm">
-                    {review.name}
-                  </p>
-                  <p className="text-navy-400 text-xs mt-0.5">
-                    {review.date}
-                  </p>
+                <div className="mt-4 pt-4 border-t border-navy-700 flex items-center justify-between">
+                  <div>
+                    <p className="text-white font-semibold text-sm">
+                      {review.name}
+                    </p>
+                    <p className="text-navy-400 text-xs mt-0.5">
+                      {review.date}
+                    </p>
+                  </div>
+                  <span className="text-navy-500 text-xs">{review.source}</span>
                 </div>
               </div>
             ))}
