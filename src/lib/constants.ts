@@ -18,7 +18,7 @@ export const CONTACT = {
 
 export const FORMSPREE_URL = "https://formspree.io/f/mvzvgagn";
 
-export const GA4_ID = "G-XXXXXXXXXX"; // TODO: Replace with actual GA4 Measurement ID
+export const GA4_ID = "G-C78T6B4P4R";
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
