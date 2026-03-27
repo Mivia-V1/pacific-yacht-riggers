@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { CONTACT, SITE_NAME } from "@/lib/constants";
 import { generatePageMetadata } from "@/lib/metadata";
 
@@ -35,26 +36,14 @@ export default function AboutPage() {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            {/* Photo placeholder */}
-            <div className="aspect-[4/5] bg-navy-100 rounded-xl flex items-center justify-center">
-              <div className="text-center text-navy-400 p-8">
-                <svg
-                  className="w-16 h-16 mx-auto mb-4 opacity-50"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
-                <p className="text-sm">
-                  [PLACEHOLDER: Add photo of Sammy working on a yacht rig]
-                </p>
-              </div>
+            <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
+              <Image
+                src="/sam1.webp"
+                alt={`${CONTACT.chiefRigger} - Chief Rigger at ${SITE_NAME}`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
 
             {/* Bio */}
