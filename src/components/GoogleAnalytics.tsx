@@ -1,7 +1,7 @@
 import { GA4_ID } from "@/lib/constants";
 
 export default function GoogleAnalytics() {
-  if (!GA4_ID || GA4_ID === "G-XXXXXXXXXX") return null;
+  if (!GA4_ID) return null;
 
   return (
     <>
