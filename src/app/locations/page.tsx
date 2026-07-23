@@ -43,38 +43,43 @@ export default function LocationsPage() {
                 index % 2 !== 0 ? "lg:flex-row-reverse" : ""
               }`}
             >
-              <div className="relative w-full lg:w-1/2 aspect-[4/3] overflow-hidden rounded-xl bg-gradient-to-br from-navy-950 via-navy-800 to-teal-700 flex items-center justify-center">
-                <div className="absolute inset-0 opacity-20">
-                  <div className="absolute -left-16 top-1/4 h-40 w-[130%] rotate-[-8deg] rounded-[50%] border-2 border-teal-200" />
-                  <div className="absolute -left-12 top-1/2 h-40 w-[125%] rotate-[-8deg] rounded-[50%] border-2 border-teal-200" />
-                  <div className="absolute -left-8 top-3/4 h-40 w-[120%] rotate-[-8deg] rounded-[50%] border-2 border-teal-200" />
-                </div>
-                <div className="relative text-center text-white p-8">
-                  <svg
-                    className="w-16 h-16 mx-auto mb-5 text-teal-300"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                  <p className="text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
-                    South Pacific
-                  </p>
-                  <p className="mt-2 text-4xl sm:text-5xl font-bold">
-                    {location.name}
-                  </p>
+              <div className="relative w-full lg:w-1/2 aspect-[4/3] overflow-hidden rounded-xl bg-navy-900 shadow-lg">
+                <iframe
+                  src={location.mapEmbedUrl}
+                  title={`${location.name} service area map`}
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  tabIndex={-1}
+                  className="absolute inset-0 h-full w-full border-0 pointer-events-none saturate-[0.7] contrast-[0.9]"
+                />
+                <div className="absolute inset-0 flex items-center justify-center p-6 pointer-events-none">
+                  <div className="rounded-xl border border-white/25 bg-navy-950/80 px-8 py-7 text-center text-white shadow-xl backdrop-blur-sm">
+                    <svg
+                      className="w-16 h-16 mx-auto mb-5 text-teal-300"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    <p className="text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
+                      South Pacific
+                    </p>
+                    <p className="mt-2 text-4xl sm:text-5xl font-bold">
+                      {location.name}
+                    </p>
+                  </div>
                 </div>
               </div>
 
