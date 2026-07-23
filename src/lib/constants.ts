@@ -103,8 +103,9 @@ export const LOCATIONS = [
   {
     id: "fiji",
     name: "Fiji",
-    mapEmbedUrl:
-      "https://www.google.com/maps?q=Vuda%20Point%20Marina%2C%20Fiji&z=10&output=embed",
+    mapImage: "/map-fiji.png",
+    mapImageAlt:
+      "Satellite map of Fiji showing Viti Levu, Vanua Levu, Lautoka, Nadi, Suva, and surrounding islands",
     tagline: "Our Home Base — Vuda Point Marina & Denarau",
     description:
       "Fiji is our year-round home base. We support visiting cruisers, local yacht owners, and marine operators around Vuda Point and Port Denarau, with other Viti Levu locations available by arrangement. Being based close to the country's principal marinas helps us inspect vessels promptly, organise materials, and coordinate work around haul-outs and sailing plans.",
@@ -118,8 +119,9 @@ export const LOCATIONS = [
   {
     id: "tonga",
     name: "Tonga",
-    mapEmbedUrl:
-      "https://www.google.com/maps?q=Vava%27u%2C%20Tonga&z=9&output=embed",
+    mapImage: "/map-tonga.png",
+    mapImageAlt:
+      "Satellite map of Tonga showing the island groups from Vava'u to Tongatapu",
     tagline: "Seasonal Service — Vava'u & Nuku'alofa",
     description:
       "We arrange seasonal service visits to Tonga around the South Pacific cruising calendar, with a focus on Vava'u and work in Nuku'alofa by arrangement. If you expect to need an inspection, replacement parts, or passage repairs, contact us early with your location and itinerary so we can confirm availability and bring the right equipment.",
@@ -133,8 +135,9 @@ export const LOCATIONS = [
   {
     id: "vanuatu",
     name: "Vanuatu",
-    mapEmbedUrl:
-      "https://www.google.com/maps?q=Port%20Vila%2C%20Vanuatu&z=10&output=embed",
+    mapImage: "/map-vanuatu.png",
+    mapImageAlt:
+      "Satellite map of Vanuatu showing the island chain from Sola to Port Vila",
     tagline: "On-Call Service — Port Vila",
     description:
       "Port Vila service is available on an on-call, fly-in basis. We work with owners and local marine facilities to assess passage wear, storm damage, and planned rigging work. Send photos and vessel details before arrival and we can advise what can be prepared in advance and whether the job is practical during your stay.",

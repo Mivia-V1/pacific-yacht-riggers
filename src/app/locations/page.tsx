@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { LOCATIONS, CONTACT } from "@/lib/constants";
 import { generatePageMetadata } from "@/lib/metadata";
@@ -44,16 +45,19 @@ export default function LocationsPage() {
               }`}
             >
               <div className="relative w-full lg:w-1/2 aspect-[4/3] overflow-hidden rounded-xl bg-navy-900 shadow-lg">
-                <iframe
-                  src={location.mapEmbedUrl}
-                  title={`${location.name} service area map`}
-                  loading="lazy"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  tabIndex={-1}
-                  className="absolute inset-0 h-full w-full border-0 pointer-events-none saturate-[0.7] contrast-[0.9]"
+                <Image
+                  src={location.mapImage}
+                  alt={location.mapImageAlt}
+                  fill
+                  className={`object-cover ${
+                    location.id === "tonga"
+                      ? "object-[center_68%]"
+                      : "object-center"
+                  }`}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 flex items-center justify-center p-6 pointer-events-none">
-                  <div className="rounded-xl border border-white/25 bg-navy-950/80 px-8 py-7 text-center text-white shadow-xl backdrop-blur-sm">
+                  <div className="rounded-xl border border-white/30 bg-navy-950/50 px-8 py-7 text-center text-white shadow-xl backdrop-blur-[2px]">
                     <svg
                       className="w-16 h-16 mx-auto mb-5 text-teal-300"
                       fill="none"
