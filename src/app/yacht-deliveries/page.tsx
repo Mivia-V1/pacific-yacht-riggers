@@ -43,10 +43,10 @@ export default function YachtDeliveriesPage() {
 
       <section className="relative overflow-hidden bg-navy-900 text-white">
         <Image
-          src="/hero-marina.png"
-          alt="Ocean-going yachts prepared for offshore passage"
+          src="/delivery-aerial-offshore.jpg"
+          alt="Offshore racing yacht sailing through open water"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           priority
           sizes="100vw"
         />
@@ -85,7 +85,16 @@ export default function YachtDeliveriesPage() {
 
       <section className="section-padding bg-white">
         <div className="container-max">
-          <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-20 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="relative aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5] overflow-hidden rounded-2xl bg-navy-100">
+              <Image
+                src="/delivery-crew-at-helm.jpg"
+                alt="Offshore sailors at the helm during a yacht passage"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
             <div>
               <p className="text-teal-600 font-semibold text-sm uppercase tracking-widest mb-3">
                 Meet Your Delivery Skipper
@@ -112,12 +121,13 @@ export default function YachtDeliveriesPage() {
                 </p>
               </div>
             </div>
+          </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="mt-10 lg:mt-14 grid grid-cols-1 sm:grid-cols-3 gap-4">
               {credentials.map((credential) => (
                 <div
                   key={credential.value}
-                  className="rounded-xl bg-navy-50 border border-navy-100 p-6"
+                  className="rounded-xl bg-navy-50 border border-navy-100 p-6 lg:p-7"
                 >
                   <p className="text-2xl font-bold text-teal-700">
                     {credential.value}
@@ -127,7 +137,6 @@ export default function YachtDeliveriesPage() {
                   </p>
                 </div>
               ))}
-            </div>
           </div>
         </div>
       </section>
@@ -205,6 +214,63 @@ export default function YachtDeliveriesPage() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-navy-900 text-white">
+        <div className="container-max">
+          <div className="max-w-2xl mb-10">
+            <p className="text-teal-400 font-semibold text-sm uppercase tracking-widest mb-3">
+              Offshore Experience
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold">
+              Proven in Open-Water Conditions
+            </h2>
+            <p className="mt-4 text-navy-300 leading-relaxed">
+              Ocean miles and offshore racing experience build the judgement,
+              preparation, and calm decision-making every successful delivery
+              depends on.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+            <div className="relative md:col-span-7 aspect-[3/2] overflow-hidden rounded-xl bg-navy-800">
+              <Image
+                src="/delivery-yacht-underway.jpg"
+                alt="Offshore yacht sailing under full sail"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 58vw"
+              />
+            </div>
+            <div className="relative md:col-span-5 aspect-[3/2] md:aspect-auto overflow-hidden rounded-xl bg-navy-800">
+              <Image
+                src="/delivery-heavy-seas.jpg"
+                alt="Offshore racing yacht driving through heavy seas"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 42vw"
+              />
+            </div>
+            <div className="relative md:col-span-5 aspect-[3/2] overflow-hidden rounded-xl bg-navy-800">
+              <Image
+                src="/delivery-tasmania.jpg"
+                alt="Offshore yacht sailing past the Tasmanian coast"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 42vw"
+              />
+            </div>
+            <div className="relative md:col-span-7 aspect-[3/2] overflow-hidden rounded-xl bg-navy-800">
+              <Image
+                src="/delivery-bow-wave.jpg"
+                alt="Offshore yacht cutting through a steep wave"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 58vw"
+              />
             </div>
           </div>
         </div>

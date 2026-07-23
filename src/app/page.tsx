@@ -140,10 +140,10 @@ export default function HomePage() {
       {/* ===== YACHT DELIVERIES ===== */}
       <section className="relative overflow-hidden bg-navy-900 text-white">
         <Image
-          src="/hero-marina.png"
+          src="/delivery-yacht-underway.jpg"
           alt=""
           fill
-          className="object-cover opacity-20"
+          className="object-cover object-center opacity-25"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/95 to-navy-900/75" />
