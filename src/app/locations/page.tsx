@@ -140,10 +140,11 @@ export default function LocationsPage() {
               professional rigging services directly to your vessel.
             </p>
             <p>
-              [PLACEHOLDER: Add more SEO-rich content about the specific
-              challenges of rigging maintenance in tropical Pacific conditions —
-              UV degradation, salt corrosion, humidity effects on wire rope,
-              availability of quality parts, etc.]
+              Tropical sun, salt spray, and year-round humidity can accelerate
+              wear in rope, wire, terminals, fittings, and deck-level
+              attachments. Regular visual checks and planned professional
+              inspections help identify corrosion, chafe, movement, and hidden
+              component failure before a passage or the next cyclone season.
             </p>
           </div>
         </div>

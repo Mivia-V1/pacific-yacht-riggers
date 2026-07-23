@@ -57,25 +57,31 @@ export default function AboutPage() {
 
               <div className="mt-6 space-y-4 text-navy-700 leading-relaxed">
                 <p>
-                  [PLACEHOLDER: Write Sammy&apos;s story — background, how he
-                  got into rigging, training and qualifications, years of
-                  experience. This should be personal and authentic.]
+                  Sammy is the Chief Rigger and hands-on lead at Pacific Yacht
+                  Rigging Services. His work covers the practical jobs that
+                  keep cruising yachts safe and moving: complete re-rigs,
+                  detailed rig checks, furler servicing, repairs, and
+                  specialist ropework.
                 </p>
                 <p>
-                  [PLACEHOLDER: Describe what drew Sammy to the South Pacific —
-                  the cruising community, the unique challenges of tropical
-                  rigging maintenance, the satisfaction of keeping people safe on
-                  the water.]
+                  Based at Vuda Point Marina, Sammy works with yacht owners at
+                  Vuda, Denarau, Nawi, and other locations across Fiji and
+                  neighbouring Pacific islands. The service is mobile and
+                  practical, with inspections and repairs carried out where the
+                  vessel is berthed whenever the job allows.
                 </p>
                 <p>
-                  [PLACEHOLDER: Talk about the business philosophy — quality
-                  over shortcuts, honest assessments, fair pricing, building
-                  relationships with cruisers who return year after year.]
+                  The approach is straightforward: inspect the complete system,
+                  pay attention to the small components that can hide serious
+                  wear, explain what has been found, and complete the work with
+                  the vessel&apos;s safety and sailing plans in mind.
                 </p>
                 <p>
-                  [PLACEHOLDER: Mention any certifications, brand partnerships,
-                  training courses completed, notable projects, or fleet
-                  contracts.]
+                  Recent work shared by the business includes a complete re-rig
+                  of a Privilege 454 at Vuda Marina, specialist tow-line
+                  splicing for a superyacht with Yacht Help Fiji, and furler
+                  strip-downs that identified failing internal terminal
+                  components before they became a larger problem.
                 </p>
               </div>
 
@@ -85,11 +91,11 @@ export default function AboutPage() {
                 </h3>
                 <ul className="space-y-2">
                   {[
-                    "[PLACEHOLDER: Key differentiator 1 — e.g., years of experience]",
-                    "[PLACEHOLDER: Key differentiator 2 — e.g., specific brand training]",
-                    "[PLACEHOLDER: Key differentiator 3 — e.g., sourcing network for parts]",
-                    "[PLACEHOLDER: Key differentiator 4 — e.g., emergency response capability]",
-                    "[PLACEHOLDER: Key differentiator 5 — e.g., cruiser community reputation]",
+                    "Complete re-rigs and condition checks for cruising yachts",
+                    "Hands-on furler servicing and critical terminal inspection",
+                    "Specialist ropework, including heavy-duty tow-line splicing",
+                    "Mobile service from Vuda to Denarau, Nawi, and beyond",
+                    "100% recommended across seven Facebook reviews",
                   ].map((item) => (
                     <li
                       key={item}

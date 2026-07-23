@@ -52,9 +52,7 @@ export function getLocalBusinessSchema() {
       opens: "07:00",
       closes: "17:00",
     },
-    sameAs: [
-      // TODO: Add social media URLs
-    ],
+    sameAs: [CONTACT.facebook],
   };
 }
 

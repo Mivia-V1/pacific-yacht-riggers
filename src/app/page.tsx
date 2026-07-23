@@ -206,8 +206,9 @@ export default function HomePage() {
               Why Cruisers Trust Us
             </h2>
             <p className="mt-4 text-lg text-navy-600">
-              [PLACEHOLDER: Add a short paragraph about why yacht owners across
-              the Pacific choose Pacific Yacht Rigging Services.]
+              From full re-rigs and detailed rig checks to furler repairs and
+              specialist ropework, we bring practical experience directly to
+              yachts across Fiji and neighbouring Pacific islands.
             </p>
           </div>
 
@@ -228,13 +229,13 @@ export default function HomePage() {
               {
                 title: "Quality Materials",
                 description:
-                  "[PLACEHOLDER: Describe sourcing of quality rigging hardware — Navtec, Sta-Lok, Hi-Mod, etc.]",
+                  "Critical terminals, wedges, fittings, wire, and rope are checked carefully and matched to the vessel, the load, and the job.",
                 icon: "shield",
               },
               {
-                title: "Fast Turnaround",
+                title: "Responsive Service",
                 description:
-                  "[PLACEHOLDER: Describe typical turnaround times, emergency availability, and responsive communication.]",
+                  "Based at Vuda Point with service across Denarau, Nawi, and other locations by arrangement. Send photos by WhatsApp to get started.",
                 icon: "clock",
               },
             ].map((item) => (
