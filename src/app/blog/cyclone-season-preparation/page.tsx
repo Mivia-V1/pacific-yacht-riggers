@@ -81,61 +81,73 @@ export default function CycloneSeasonArticle() {
                 If You&apos;re Staying in the Water
               </h3>
               <p>
-                [PLACEHOLDER: Detailed guidance for boats staying in the water
-                — removing or securing all loose items aloft, removing headsails
-                and biminis, extra halyards for chafe protection, removing boom
-                or securing it, checking all standing rigging tension, adding
-                extra lines to marina cleats.]
+                Reduce windage early. Remove sails, canvas, awnings, flags, and
+                loose deck equipment rather than relying on lashings alone.
+                Secure the boom, centre or isolate halyards so they cannot beat
+                against the mast, protect every line from chafe, and arrange
+                mooring lines for the expected wind shifts and surge. Follow
+                the marina or cyclone-hole plan, including its required line
+                sizes, anchors, and evacuation timing.
               </p>
 
               <h3 className="text-xl font-bold text-navy-900 mt-8">
                 If You&apos;re Hauling Out
               </h3>
               <p>
-                [PLACEHOLDER: Guidance for boats on the hard — removing the
-                mast entirely (ideal), or securing it with extra jack stands and
-                tie-downs. Covering all rigging terminals to prevent UV/rain
-                degradation. Checking cradle/stand security.]
+                Confirm the yard&apos;s cyclone procedure well before haul-out.
+                The vessel, cradle, stands, ground anchors, and tie-downs must be
+                treated as one system. Removing the mast can greatly reduce
+                windage when the yard and vessel setup permit it; if it remains
+                stepped, remove sails and canvas and secure all running rigging.
+                Only the yard should position or alter stands and tie-down points.
               </p>
 
               <h3 className="text-xl font-bold text-navy-900 mt-8">
                 Essential Pre-Season Checks
               </h3>
               <p>
-                [PLACEHOLDER: List the critical items — inspect all standing
-                rigging terminals, check chainplate bolts, inspect mast boot
-                seal, verify all halyards and sheets are in good condition,
-                ensure spreader boots are intact, check backstay tension.]
+                Inspect visible standing-rigging terminals, chainplates,
+                turnbuckles, pins, mast fittings, and spreaders. Replace chafed
+                or sun-damaged lines, confirm halyards can be secured away from
+                the mast, and check that furling sails can be removed without a
+                last-minute repair. Photograph the rig and deck setup so you
+                have a condition record before the season.
               </p>
 
               <h2 className="text-2xl font-bold text-navy-900 mt-10">
                 During a Cyclone Warning
               </h2>
               <p>
-                [PLACEHOLDER: What to do when a warning is issued — final
-                preparations, additional securing, removing electronics and
-                valuables from aloft, flooding the bilge for stability (if
-                appropriate), final rig tension checks.]
+                Work from a written checklist and finish early enough to leave
+                safely. Remove the remaining windage, add and equalise approved
+                mooring lines, install chafe protection, secure all movable
+                gear, and make a final walk around the vessel. Do not climb the
+                mast once conditions deteriorate. Follow official warnings,
+                harbour directions, and the marina&apos;s evacuation plan.
               </p>
 
               <h2 className="text-2xl font-bold text-navy-900 mt-10">
                 After the Storm: Post-Cyclone Rig Assessment
               </h2>
               <p>
-                [PLACEHOLDER: What to check after a cyclone has passed — visual
-                inspection from deck and aloft, checking for shifted chainplates,
-                loose fittings, chafe damage, bent spreaders, cracked
-                turnbuckles. When to get a professional assessment before
-                sailing again.]
+                Begin from deck level only after the area has been declared
+                safe. Look for changed rig tension, bent spreaders, displaced
+                chainplates, cracked or distorted terminals, loose fasteners,
+                damaged furlers, and severe line chafe. If the mast has moved,
+                the vessel was struck, or any fitting is suspect, do not load
+                the rig or sail until it has been professionally assessed.
               </p>
 
               <h2 className="text-2xl font-bold text-navy-900 mt-10">
                 Cyclone Insurance and Your Rigging
               </h2>
               <p>
-                [PLACEHOLDER: Brief note about how insurers view rigging
-                condition — some require recent survey, proper preparation is
-                often a policy condition. Encourage documentation with photos.]
+                Cyclone cover, named-storm plans, geographical limits, and
+                survey requirements vary by policy. Read the policy conditions
+                before the season and ask the insurer or broker to clarify
+                anything uncertain. Keep dated photographs, invoices, survey
+                reports, and a copy of your preparation plan as evidence of
+                maintenance and storm preparation.
               </p>
 
               {/* CTA */}

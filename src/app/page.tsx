@@ -291,7 +291,6 @@ export default function HomePage() {
                 href={`/locations#${loc.name.toLowerCase()}`}
                 className="group relative overflow-hidden rounded-xl bg-navy-900 text-white p-8 lg:p-10 hover:bg-navy-800 transition-colors"
               >
-                {/* TODO: Replace with actual location photos */}
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 to-transparent" />
                 <div className="relative">
                   <span className="text-teal-400 text-sm font-semibold uppercase tracking-wider">

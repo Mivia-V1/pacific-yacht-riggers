@@ -84,9 +84,12 @@ export default function StandingRiggingArticle() {
                 crevice corrosion in swage fittings.
               </p>
               <p>
-                [PLACEHOLDER: Add specific statistics about rigging failure —
-                average lifespan of wire standing rigging, how tropical
-                conditions reduce that lifespan, common failure scenarios.]
+                Age alone does not determine condition. Ocean miles, rig tune,
+                terminal design, previous damage, maintenance, and long
+                exposure to salt and tropical heat all matter. Keep a record of
+                the rig&apos;s installation date and inspect it routinely, with
+                extra attention before an offshore passage or after heavy
+                weather.
               </p>
 
               <h2 className="text-2xl font-bold text-navy-900 mt-10">
@@ -97,55 +100,70 @@ export default function StandingRiggingArticle() {
                 1. Swage Fittings
               </h3>
               <p>
-                [PLACEHOLDER: Describe what to look for in swage fittings —
-                hairline cracks, rust staining (meat-hooks), swelling at the
-                base, signs of movement. Explain the screwdriver test. Note that
-                swage fittings are the #1 failure point.]
+                Look closely around the mouth and body of every swage for
+                hairline cracks, swelling, distortion, or brown staining. Rust
+                trails do not always mean a fitting has failed, but they justify
+                closer assessment. Clean away surface contamination so changes
+                can be seen, and never force tools into a crack or fitting.
               </p>
 
               <h3 className="text-xl font-bold text-navy-900 mt-8">
                 2. Wire Rope Condition
               </h3>
               <p>
-                [PLACEHOLDER: Describe wire rope inspection — broken strands
-                (meatheads), fishhooks, discolouration, kinks from past
-                overloading. Explain the rag test for finding broken strands.]
+                Check the full accessible length for broken strands, kinks,
+                flattening, abrasion, or changes in colour. Pay particular
+                attention where wire enters a terminal and where it can touch a
+                spreader or fitting. A soft cloth drawn carefully along the wire
+                can catch on a broken strand; protect your hands and do not grip
+                suspect wire directly.
               </p>
 
               <h3 className="text-xl font-bold text-navy-900 mt-8">
                 3. Turnbuckles & Toggle Fittings
               </h3>
               <p>
-                [PLACEHOLDER: Describe turnbuckle inspection — thread condition,
-                cotter pin integrity, toggle wear, clevis pin elongation.]
+                Confirm turnbuckles are straight, properly secured, and have
+                adequate thread engagement. Inspect split pins and retaining
+                hardware for wear or sharp edges, then check toggles and clevis
+                pins for side-loading, elongation, or movement that suggests the
+                joint is no longer articulating freely.
               </p>
 
               <h3 className="text-xl font-bold text-navy-900 mt-8">
                 4. Chainplates
               </h3>
               <p>
-                [PLACEHOLDER: Describe chainplate inspection — deck leaks as
-                early warning, checking for crevice corrosion, stress cracking,
-                proper backing plates.]
+                Water staining, cracked sealant, damp joinery, or corrosion near
+                a chainplate can be early warnings. Inspect above and below deck
+                where access permits, including fasteners and backing structure.
+                Stainless steel can deteriorate where oxygen is limited, so a
+                polished exterior does not guarantee the hidden section is sound.
               </p>
 
               <h3 className="text-xl font-bold text-navy-900 mt-8">
                 5. Masthead & Spreaders
               </h3>
               <p>
-                [PLACEHOLDER: Describe what to check at the masthead — sheave
-                condition, tang attachment, spreader root fittings, spreader tip
-                protection, forestay and backstay attachment points.]
+                Aloft, inspect tangs, pins, fasteners, sheaves, halyard exits,
+                spreader roots, and spreader tips. Look for corrosion around
+                dissimilar metals, loose fasteners, chafe, cracking, or fittings
+                that have shifted. Masthead, forestay, and backstay attachments
+                deserve particular attention because deck-level checks cannot
+                reveal their full condition.
               </p>
 
               <h2 className="text-2xl font-bold text-navy-900 mt-10">
                 When to Replace Standing Rigging
               </h2>
               <p>
-                [PLACEHOLDER: General guidance on replacement intervals — 10-15
-                year rule of thumb, reduced in tropics, factors that affect
-                lifespan (ocean miles, UV exposure, rig tune, material quality).
-                Mention rod rigging vs. wire rigging lifespans.]
+                There is no single safe replacement date for every yacht.
+                Insurers, surveyors, manufacturers, and offshore organisers may
+                each apply their own age or inspection requirements. Base the
+                decision on documented age, material, service history, sailing
+                loads, environment, and a professional condition assessment.
+                Unknown history or any evidence of cracking, broken wire, or
+                damaged terminals should be addressed before further sailing.
               </p>
 
               <h2 className="text-2xl font-bold text-navy-900 mt-10">
@@ -159,9 +177,13 @@ export default function StandingRiggingArticle() {
                 above.
               </p>
               <p>
-                [PLACEHOLDER: Describe what a professional inspection includes
-                that goes beyond owner checks — dye penetrant testing, going
-                aloft with proper tools, load path analysis, detailed reporting.]
+                A professional inspection follows the load path from deck
+                attachments to the masthead, including areas that require safe
+                access aloft. It can include measurements, close examination of
+                terminals and fittings, rig-tune observations, and a written
+                record of findings. Where surface cracking is suspected, the
+                rigger can recommend appropriate non-destructive testing or
+                component removal.
               </p>
 
               {/* CTA */}

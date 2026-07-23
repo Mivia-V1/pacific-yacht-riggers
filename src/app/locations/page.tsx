@@ -43,11 +43,15 @@ export default function LocationsPage() {
                 index % 2 !== 0 ? "lg:flex-row-reverse" : ""
               }`}
             >
-              {/* Map / Image placeholder */}
-              <div className="w-full lg:w-1/2 aspect-[4/3] bg-navy-100 rounded-xl flex items-center justify-center">
-                <div className="text-center text-navy-400 p-8">
+              <div className="relative w-full lg:w-1/2 aspect-[4/3] overflow-hidden rounded-xl bg-gradient-to-br from-navy-950 via-navy-800 to-teal-700 flex items-center justify-center">
+                <div className="absolute inset-0 opacity-20">
+                  <div className="absolute -left-16 top-1/4 h-40 w-[130%] rotate-[-8deg] rounded-[50%] border-2 border-teal-200" />
+                  <div className="absolute -left-12 top-1/2 h-40 w-[125%] rotate-[-8deg] rounded-[50%] border-2 border-teal-200" />
+                  <div className="absolute -left-8 top-3/4 h-40 w-[120%] rotate-[-8deg] rounded-[50%] border-2 border-teal-200" />
+                </div>
+                <div className="relative text-center text-white p-8">
                   <svg
-                    className="w-16 h-16 mx-auto mb-4 opacity-50"
+                    className="w-16 h-16 mx-auto mb-5 text-teal-300"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -65,9 +69,11 @@ export default function LocationsPage() {
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <p className="text-sm">
-                    [PLACEHOLDER: Add photo of {location.name} marina /
-                    anchorage or embedded map]
+                  <p className="text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
+                    South Pacific
+                  </p>
+                  <p className="mt-2 text-4xl sm:text-5xl font-bold">
+                    {location.name}
                   </p>
                 </div>
               </div>

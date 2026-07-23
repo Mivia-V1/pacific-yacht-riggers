@@ -65,7 +65,7 @@ src/
     └── structured-data.ts  # JSON-LD schema generators
 ```
 
-## Configuration (Before Launch)
+## Production Configuration
 
 ### 1. Formspree
 1. Create a form at [formspree.io](https://formspree.io)
@@ -75,30 +75,11 @@ src/
 1. Create a GA4 property at [analytics.google.com](https://analytics.google.com)
 2. Update `GA4_ID` in `src/lib/constants.ts`
 
-### 3. Images
-Replace placeholder blocks with actual photographs:
-- **Hero:** Yacht rigging work in the South Pacific
-- **Services:** Action shots of each service type
-- **Locations:** Marina/anchorage photos for Fiji, Tonga, Vanuatu
-- **About:** Photo of Sammy working on a yacht
-- **Blog:** Relevant header images for each article
-- **Logo:** Replace the PYR text logo with the actual circular emblem logo
+### 3. Images and Brand Assets
 
-### 4. Content Placeholders
-Search the codebase for `[PLACEHOLDER:` to find all content that needs real copy. Key areas:
-- Service detailed descriptions
-- Location detailed descriptions
-- About page biography
-- Testimonials
-- Trust signal descriptions
-- Blog article body content
-
-### 5. Favicon & OG Image
-Add to `public/`:
-- `favicon.ico`
-- `apple-touch-icon.png`
-- `og-image.jpg` (1200x630px)
-- `logo.png`
+Production photography, the company logo, and the site favicon are stored in
+`public/`. Add dedicated social-sharing artwork later if the business supplies
+an approved 1200×630 image.
 
 ## Deployment to Cloudflare Pages
 
