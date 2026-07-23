@@ -7,7 +7,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = generatePageMetadata({
   title: "About Us",
   description:
-    "Meet Sammy, Chief Rigger at Pacific Yacht Rigging Services. Learn about our experience, values, and commitment to keeping South Pacific sailors safe.",
+    "Meet Sammy, Chief Rigger at Pacific Yacht Rigging Services — a professionally trained rigger and lifelong sailor with 15 Sydney Hobart Yacht Races behind him.",
   path: "/about",
 });
 
@@ -57,24 +57,40 @@ export default function AboutPage() {
 
               <div className="mt-6 space-y-4 text-navy-700 leading-relaxed">
                 <p>
-                  Sammy is the Chief Rigger and hands-on lead at Pacific Yacht
-                  Rigging Services. His work covers the practical jobs that
-                  keep cruising yachts safe and moving: complete re-rigs,
-                  detailed rig checks, furler servicing, repairs, and
-                  specialist ropework.
+                  Sammy grew up on and around yachts, turning a lifelong
+                  connection with sailing into a career as a professional
+                  rigger. He trained and developed his trade across New Zealand,
+                  Australia, and Fiji, building the practical knowledge needed
+                  to work on everything from local cruising yachts to offshore
+                  race boats and superyachts.
+                </p>
+                <p>
+                  His experience on the water is just as extensive. Sammy has
+                  competed in 15 Sydney Hobart Yacht Races, one of the
+                  world&apos;s most demanding offshore events. That background
+                  has shaped a deep respect for sound preparation, dependable
+                  equipment, and rigging that can be trusted when conditions
+                  become challenging.
+                </p>
+                <p>
+                  As Chief Rigger and hands-on lead at Pacific Yacht Rigging
+                  Services, Sammy handles the practical work that keeps yachts
+                  safe and moving: complete re-rigs, detailed rig inspections,
+                  furler servicing, repairs, and specialist ropework.
                 </p>
                 <p>
                   Based at Vuda Point Marina, Sammy works with yacht owners at
                   Vuda, Denarau, Nawi, and other locations across Fiji and
                   neighbouring Pacific islands. The service is mobile and
-                  practical, with inspections and repairs carried out where the
-                  vessel is berthed whenever the job allows.
+                  practical, with inspections and repairs carried out at the
+                  vessel whenever the job allows.
                 </p>
                 <p>
-                  The approach is straightforward: inspect the complete system,
-                  pay attention to the small components that can hide serious
-                  wear, explain what has been found, and complete the work with
-                  the vessel&apos;s safety and sailing plans in mind.
+                  His approach is straightforward: inspect the complete system,
+                  pay close attention to the small components that can conceal
+                  serious wear, clearly explain what has been found, and carry
+                  out the work with the vessel&apos;s safety and future sailing
+                  plans in mind.
                 </p>
                 <p>
                   Recent work shared by the business includes a complete re-rig
@@ -91,6 +107,8 @@ export default function AboutPage() {
                 </h3>
                 <ul className="space-y-2">
                   {[
+                    "Professionally trained across New Zealand, Australia, and Fiji",
+                    "Veteran of 15 Sydney Hobart Yacht Races",
                     "Complete re-rigs and condition checks for cruising yachts",
                     "Hands-on furler servicing and critical terminal inspection",
                     "Specialist ropework, including heavy-duty tow-line splicing",
