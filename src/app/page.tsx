@@ -137,6 +137,67 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ===== YACHT DELIVERIES ===== */}
+      <section className="relative overflow-hidden bg-navy-900 text-white">
+        <Image
+          src="/hero-marina.png"
+          alt=""
+          fill
+          className="object-cover opacity-20"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/95 to-navy-900/75" />
+        <div className="relative container-max section-padding">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.25fr_0.75fr] gap-10 lg:gap-16 items-center">
+            <div>
+              <p className="text-teal-400 font-semibold text-sm uppercase tracking-widest mb-4">
+                New Worldwide Service
+              </p>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+                Professional Ocean Yacht Deliveries
+              </h2>
+              <p className="mt-5 text-lg text-navy-200 leading-relaxed max-w-2xl">
+                Safe, reliable yacht delivery and vessel relocation from Fiji
+                to destinations throughout the Pacific and around the world,
+                led by experienced offshore skipper Jack Price.
+              </p>
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/yacht-deliveries"
+                  className="inline-flex items-center justify-center px-7 py-3.5 bg-teal-600 hover:bg-teal-500 text-white font-semibold rounded-lg transition-colors"
+                >
+                  Explore Yacht Deliveries
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center px-7 py-3.5 border-2 border-navy-400 hover:border-teal-400 text-white font-semibold rounded-lg transition-colors"
+                >
+                  Discuss a Passage
+                </Link>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { value: "20,000+", label: "Offshore nautical miles" },
+                { value: "Ocean", label: "Yachtmaster qualified" },
+                { value: "50 Tonne", label: "Master certified" },
+                { value: "Worldwide", label: "Delivery destinations" },
+              ].map((item) => (
+                <div
+                  key={item.label}
+                  className="rounded-xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm"
+                >
+                  <p className="text-2xl font-bold text-teal-400">{item.value}</p>
+                  <p className="mt-1 text-sm leading-snug text-navy-200">
+                    {item.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== TRUST SIGNALS / WHY CHOOSE US ===== */}
       <section className="section-padding bg-navy-50">
         <div className="container-max">

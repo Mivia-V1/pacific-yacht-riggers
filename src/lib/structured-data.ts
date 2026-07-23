@@ -78,6 +78,23 @@ export function getServiceSchemas() {
   }));
 }
 
+export function getDeliveryServiceSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Ocean Yacht Deliveries",
+    description:
+      "Professional ocean yacht delivery, vessel relocation, and offshore skipper services from Fiji to destinations worldwide.",
+    provider: {
+      "@type": "LocalBusiness",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    areaServed: "Worldwide",
+    url: `${SITE_URL}/yacht-deliveries`,
+  };
+}
+
 export function getBlogPostSchema({
   title,
   description,

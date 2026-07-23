@@ -2,7 +2,7 @@
 
 Production website for **Pacific Yacht Rigging Services** — professional yacht rigging services across the South Pacific (Fiji, Tonga, Vanuatu).
 
-**Live URL:** [https://pacificyachtriggers.com](https://pacificyachtriggers.com)
+**Live URL:** [https://pacificyachtrigging.com](https://pacificyachtrigging.com)
 
 ## Tech Stack
 

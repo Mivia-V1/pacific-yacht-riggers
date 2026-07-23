@@ -1,5 +1,5 @@
 export const SITE_NAME = "Pacific Yacht Rigging Services";
-export const SITE_URL = "https://pacificyachtriggers.com";
+export const SITE_URL = "https://pacificyachtrigging.com";
 export const SITE_DESCRIPTION =
   "Professional yacht rigging services across the South Pacific. Standing and running rigging, mast inspections, furler servicing, and custom fabrication in Fiji, Tonga, and Vanuatu.";
 export const SITE_TAGLINE = "For All Your Rigging Needs";
@@ -23,6 +23,7 @@ export const GA4_ID = "G-C78T6B4P4R";
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
+  { label: "Deliveries", href: "/yacht-deliveries" },
   { label: "Locations", href: "/locations" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
@@ -36,7 +37,7 @@ export const SERVICES = [
     summary:
       "Complete inspection, repair, and replacement of shrouds, stays, and structural rigging components.",
     description:
-      "[PLACEHOLDER: Detailed description of standing rigging services including wire rope inspection, swage fitting assessment, turnbuckle servicing, and full rig replacements. Mention brands/materials used.]",
+      "We inspect the complete standing-rigging load path, including wire, terminals, turnbuckles, toggles, chainplates, mast fittings, and deck attachments. Whether you need a condition assessment, an individual stay replaced, or a complete re-rig, we explain what we find and recommend work in order of safety and priority.",
     icon: "anchor",
   },
   {
@@ -45,7 +46,7 @@ export const SERVICES = [
     summary:
       "Halyards, sheets, and control lines — supply, splicing, and replacement for peak sail performance.",
     description:
-      "[PLACEHOLDER: Detailed description of running rigging services including halyard replacement, sheet splicing, clutch servicing, and line selection guidance.]",
+      "We replace halyards, sheets, reefing lines, control lines, and other running rigging, with splicing and finishing to suit your deck layout. We can also trace stiffness, chafe, and poor handling through sheaves, clutches, blocks, and lead angles, then help select line that fits the load and the way you sail.",
     icon: "wind",
   },
   {
@@ -54,7 +55,7 @@ export const SERVICES = [
     summary:
       "Thorough masthead-to-deck inspections identifying wear, corrosion, and potential failure points.",
     description:
-      "[PLACEHOLDER: Detail the mast inspection process — visual inspection, non-destructive testing, spreader checks, halyard sheave inspection, mast step and partners examination.]",
+      "Our mast inspections work from masthead to deck, checking tangs, sheaves, fasteners, spreader roots and tips, fittings, wiring exits, corrosion points, and the mast step or partners where accessible. You receive a clear account of visible issues, practical maintenance advice, and a plan for any repairs that should be completed before passage.",
     icon: "search",
   },
   {
@@ -63,7 +64,7 @@ export const SERVICES = [
     summary:
       "Professional servicing and repair of headsail and in-mast furling systems from all major brands.",
     description:
-      "[PLACEHOLDER: Describe furler servicing including bearing replacement, drum servicing, foil section repair, and specific brand experience (Profurl, Harken, Facnor, etc.).]",
+      "A reluctant or uneven furler can point to problems in the drum, bearings, foil, halyard lead, or stay tension. We inspect the complete system, service accessible components, replace worn parts where available, and correct installation or alignment issues so the sail can be handled safely and reliably.",
     icon: "settings",
   },
   {
@@ -72,7 +73,7 @@ export const SERVICES = [
     summary:
       "Bespoke stainless steel and rigging hardware fabrication for unique vessel requirements.",
     description:
-      "[PLACEHOLDER: Detail custom fabrication capabilities — chainplate fabrication, custom tangs, bespoke fittings, backstay adjusters, and any welding/metalwork capabilities.]",
+      "When an original fitting is obsolete or a vessel needs a purpose-made solution, we can assess the requirement and coordinate suitable custom rigging hardware. Every job begins with the load, material, dimensions, attachment method, and access constraints so the finished component is appropriate for the installation.",
     icon: "wrench",
   },
   {
@@ -81,7 +82,7 @@ export const SERVICES = [
     summary:
       "Independent rigging assessments for yacht buyers — know the true condition before you commit.",
     description:
-      "[PLACEHOLDER: Describe the pre-purchase survey process, what's included in the report, typical turnaround time, and how this protects buyers in the yacht market.]",
+      "A pre-purchase rig survey gives buyers a focused view of the mast, standing and running rigging, furling gear, and visible attachment points. We document observed condition and maintenance concerns so you can discuss repairs, replacement priorities, and likely rigging costs before completing a purchase.",
     icon: "clipboard",
   },
 ] as const;
@@ -92,7 +93,7 @@ export const LOCATIONS = [
     name: "Fiji",
     tagline: "Our Home Base — Vuda Point Marina & Denarau",
     description:
-      "[PLACEHOLDER: Describe Fiji operations — primary base at Vuda Point Marina, services available at Port Denarau Marina, coverage across Viti Levu. Mention proximity to major cruising routes, haul-out facilities, chandleries. Describe typical clients — bluewater cruisers, charter fleets, local yacht owners.]",
+      "Fiji is our year-round home base. We support visiting cruisers, local yacht owners, and marine operators around Vuda Point and Port Denarau, with other Viti Levu locations available by arrangement. Being based close to the country's principal marinas helps us inspect vessels promptly, organise materials, and coordinate work around haul-outs and sailing plans.",
     highlights: [
       "Vuda Point Marina — primary workshop",
       "Port Denarau Marina coverage",
@@ -105,7 +106,7 @@ export const LOCATIONS = [
     name: "Tonga",
     tagline: "Seasonal Service — Vava'u & Nuku'alofa",
     description:
-      "[PLACEHOLDER: Describe Tonga operations — seasonal availability aligned with cruising season (May–November), services at Vava'u (The Moorings area) and Nuku'alofa. Mention the popularity of Vava'u as a cruising destination and the lack of local rigging services.]",
+      "We arrange seasonal service visits to Tonga around the South Pacific cruising calendar, with a focus on Vava'u and work in Nuku'alofa by arrangement. If you expect to need an inspection, replacement parts, or passage repairs, contact us early with your location and itinerary so we can confirm availability and bring the right equipment.",
     highlights: [
       "Vava'u seasonal base (May–Nov)",
       "Nuku'alofa by arrangement",
@@ -118,7 +119,7 @@ export const LOCATIONS = [
     name: "Vanuatu",
     tagline: "On-Call Service — Port Vila",
     description:
-      "[PLACEHOLDER: Describe Vanuatu operations — on-call basis, Port Vila focus, service at the main marina. Mention Vanuatu's position on the coconut milk run, cyclone damage repair capabilities, and coordination with local haul-out facilities.]",
+      "Port Vila service is available on an on-call, fly-in basis. We work with owners and local marine facilities to assess passage wear, storm damage, and planned rigging work. Send photos and vessel details before arrival and we can advise what can be prepared in advance and whether the job is practical during your stay.",
     highlights: [
       "Port Vila marina coverage",
       "Cyclone damage response",
