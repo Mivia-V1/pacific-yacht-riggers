@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { SERVICES, CONTACT } from "@/lib/constants";
+import ServicesCarousel from "@/components/ServicesCarousel";
+import { CONTACT } from "@/lib/constants";
 
 export default function HomePage() {
   return (
@@ -99,41 +100,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {SERVICES.map((service) => (
-              <Link
-                key={service.id}
-                href={`/services#${service.id}`}
-                className="group p-6 lg:p-8 rounded-xl border border-navy-100 hover:border-teal-300 hover:shadow-lg transition-all bg-white"
-              >
-                <div className="w-12 h-12 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center mb-4 group-hover:bg-teal-100 transition-colors">
-                  <ServiceIcon name={service.icon} />
-                </div>
-                <h3 className="text-xl font-bold text-navy-900 mb-2 group-hover:text-teal-700 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-navy-600 leading-relaxed">
-                  {service.summary}
-                </p>
-                <span className="inline-flex items-center gap-1 mt-4 text-teal-600 font-medium text-sm group-hover:gap-2 transition-all">
-                  Learn more
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </span>
-              </Link>
-            ))}
-          </div>
+          <ServicesCarousel />
         </div>
       </section>
 
