@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { SERVICES, CONTACT } from "@/lib/constants";
 import { generatePageMetadata } from "@/lib/metadata";
@@ -48,27 +49,14 @@ export default function ServicesPage() {
                   index % 2 !== 0 ? "lg:flex-row-reverse" : ""
                 }`}
               >
-                {/* Image placeholder */}
-                <div className="w-full lg:w-1/2 aspect-[4/3] bg-navy-100 rounded-xl flex items-center justify-center">
-                  <div className="text-center text-navy-400 p-8">
-                    <svg
-                      className="w-16 h-16 mx-auto mb-4 opacity-50"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg>
-                    <p className="text-sm">
-                      [PLACEHOLDER: Add photo of {service.title.toLowerCase()}{" "}
-                      work in progress]
-                    </p>
-                  </div>
+                <div className="relative w-full lg:w-1/2 aspect-[4/3] bg-navy-100 rounded-xl overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.imageAlt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
                 </div>
 
                 {/* Content */}
